@@ -1,0 +1,12 @@
+input_string=input()
+output_string=""
+output_list=[]
+maximum_value=-1
+for i in range(0,len(input_string)):
+    output_list.append(output_string+input_string[i])
+    output_string+=input_string[i]
+for j in range(0,len(output_list)):
+    distinct_character=len(set(output_list[i]))
+    if(distinct_character>maximum_value):
+        maximum_value=distinct_character
+print(maximum_value)
